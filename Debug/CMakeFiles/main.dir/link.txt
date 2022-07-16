@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/main.dir/main.cpp.o -o main  FastNoise2/src/libFastNoiseD.a -lsfml-system -lsfml-graphics -lsfml-window liball-a.a 

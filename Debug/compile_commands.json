@@ -1,0 +1,77 @@
+[
+{
+  "directory": "/home/maks/shit/work/sfml/chunk_creator_rpg/Debug",
+  "command": "/usr/bin/c++  -I/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include -g -o CMakeFiles/all-a.dir/main.cpp.o -c /home/maks/shit/work/sfml/chunk_creator_rpg/main.cpp",
+  "file": "/home/maks/shit/work/sfml/chunk_creator_rpg/main.cpp"
+},
+{
+  "directory": "/home/maks/shit/work/sfml/chunk_creator_rpg/Debug",
+  "command": "/usr/bin/c++ -DFASTNOISE_STATIC_LIB -I/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include -g -o CMakeFiles/main.dir/main.cpp.o -c /home/maks/shit/work/sfml/chunk_creator_rpg/main.cpp",
+  "file": "/home/maks/shit/work/sfml/chunk_creator_rpg/main.cpp"
+},
+{
+  "directory": "/home/maks/shit/work/sfml/chunk_creator_rpg/Debug/FastNoise2/src",
+  "command": "/usr/bin/c++ -DFASTNOISE_STATIC_LIB -I/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include -g -ffast-math -fno-stack-protector -std=gnu++17 -o CMakeFiles/FastNoise.dir/FastNoise/Metadata.cpp.o -c /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastNoise/Metadata.cpp",
+  "file": "/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastNoise/Metadata.cpp"
+},
+{
+  "directory": "/home/maks/shit/work/sfml/chunk_creator_rpg/Debug/FastNoise2/src",
+  "command": "/usr/bin/c++ -DFASTNOISE_STATIC_LIB -I/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include -g -ffast-math -fno-stack-protector -std=gnu++17 -o CMakeFiles/FastNoise.dir/FastNoise/SmartNode.cpp.o -c /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastNoise/SmartNode.cpp",
+  "file": "/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastNoise/SmartNode.cpp"
+},
+{
+  "directory": "/home/maks/shit/work/sfml/chunk_creator_rpg/Debug/FastNoise2/src",
+  "command": "/usr/bin/c++ -DFASTNOISE_STATIC_LIB -I/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include -g -ffast-math -fno-stack-protector -std=gnu++17 -o CMakeFiles/FastNoise.dir/FastNoise/FastNoise_C.cpp.o -c /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastNoise/FastNoise_C.cpp",
+  "file": "/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastNoise/FastNoise_C.cpp"
+},
+{
+  "directory": "/home/maks/shit/work/sfml/chunk_creator_rpg/Debug/FastNoise2/src",
+  "command": "/usr/bin/c++ -DFASTNOISE_STATIC_LIB -I/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include -g -ffast-math -fno-stack-protector -std=gnu++17 -o CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD.cpp.o -c /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD.cpp",
+  "file": "/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD.cpp"
+},
+{
+  "directory": "/home/maks/shit/work/sfml/chunk_creator_rpg/Debug/FastNoise2/src",
+  "command": "/usr/bin/c++ -DFASTNOISE_STATIC_LIB -I/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include -g -ffast-math -fno-stack-protector -std=gnu++17 -mavx2 -mfma -o CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_AVX2.cpp.o -c /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_AVX2.cpp",
+  "file": "/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_AVX2.cpp"
+},
+{
+  "directory": "/home/maks/shit/work/sfml/chunk_creator_rpg/Debug/FastNoise2/src",
+  "command": "/usr/bin/c++ -DFASTNOISE_STATIC_LIB -I/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include -g -ffast-math -fno-stack-protector -std=gnu++17 -mavx512f -mavx512dq -mfma -o CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_AVX512.cpp.o -c /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_AVX512.cpp",
+  "file": "/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_AVX512.cpp"
+},
+{
+  "directory": "/home/maks/shit/work/sfml/chunk_creator_rpg/Debug/FastNoise2/src",
+  "command": "/usr/bin/c++ -DFASTNOISE_STATIC_LIB -I/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include -g -ffast-math -fno-stack-protector -std=gnu++17 -o CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_NEON.cpp.o -c /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_NEON.cpp",
+  "file": "/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_NEON.cpp"
+},
+{
+  "directory": "/home/maks/shit/work/sfml/chunk_creator_rpg/Debug/FastNoise2/src",
+  "command": "/usr/bin/c++ -DFASTNOISE_STATIC_LIB -I/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include -g -ffast-math -fno-stack-protector -std=gnu++17 -o CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_Scalar.cpp.o -c /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_Scalar.cpp",
+  "file": "/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_Scalar.cpp"
+},
+{
+  "directory": "/home/maks/shit/work/sfml/chunk_creator_rpg/Debug/FastNoise2/src",
+  "command": "/usr/bin/c++ -DFASTNOISE_STATIC_LIB -I/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include -g -ffast-math -fno-stack-protector -std=gnu++17 -o CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_SSE2.cpp.o -c /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_SSE2.cpp",
+  "file": "/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_SSE2.cpp"
+},
+{
+  "directory": "/home/maks/shit/work/sfml/chunk_creator_rpg/Debug/FastNoise2/src",
+  "command": "/usr/bin/c++ -DFASTNOISE_STATIC_LIB -I/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include -g -ffast-math -fno-stack-protector -std=gnu++17 -msse3 -o CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_SSE3.cpp.o -c /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_SSE3.cpp",
+  "file": "/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_SSE3.cpp"
+},
+{
+  "directory": "/home/maks/shit/work/sfml/chunk_creator_rpg/Debug/FastNoise2/src",
+  "command": "/usr/bin/c++ -DFASTNOISE_STATIC_LIB -I/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include -g -ffast-math -fno-stack-protector -std=gnu++17 -msse4.1 -o CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_SSE41.cpp.o -c /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_SSE41.cpp",
+  "file": "/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_SSE41.cpp"
+},
+{
+  "directory": "/home/maks/shit/work/sfml/chunk_creator_rpg/Debug/FastNoise2/src",
+  "command": "/usr/bin/c++ -DFASTNOISE_STATIC_LIB -I/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include -g -ffast-math -fno-stack-protector -std=gnu++17 -msse4.2 -o CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_SSE42.cpp.o -c /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_SSE42.cpp",
+  "file": "/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_SSE42.cpp"
+},
+{
+  "directory": "/home/maks/shit/work/sfml/chunk_creator_rpg/Debug/FastNoise2/src",
+  "command": "/usr/bin/c++ -DFASTNOISE_STATIC_LIB -I/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include -g -ffast-math -fno-stack-protector -std=gnu++17 -mssse3 -o CMakeFiles/FastNoise.dir/FastSIMD/FastSIMD_Level_SSSE3.cpp.o -c /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_SSSE3.cpp",
+  "file": "/home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/src/FastSIMD/FastSIMD_Level_SSSE3.cpp"
+}
+]
