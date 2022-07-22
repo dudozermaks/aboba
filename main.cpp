@@ -5,7 +5,7 @@
 #include "PerlinNoise/PerlinNoise.hpp"
 
 double MAX_CIRCLE_SIZE = 2;
-double MIN_CIRCLE_SIZE = 2;
+double MIN_CIRCLE_SIZE = 1.8;
 
 struct Noise{
   sf::Vector2f pos;
@@ -31,6 +31,9 @@ struct Circle{
   }
   double dist_sq(sf::Vector2f position){
     return pow(position.x - this->pos.x, 2) + pow(position.y - this->pos.y, 2);
+  }
+  bool is_inside(sf::Vector2f position){
+    return dist_sq(position) - pow(radius, 2) <= 0;
   }
 };
 
@@ -63,22 +66,25 @@ int main(){
   int index = 0;
   while (!noise.empty() && index < 100){
     index++;
-    auto pos = noise[rand() * 1.0 / RAND_MAX * noise.size()].pos;
+    sf::Vector2f pos = noise[rand() * 1.0 / RAND_MAX * noise.size()].pos;
 
-    auto max_size = MAX_CIRCLE_SIZE;
+    double max_size = MAX_CIRCLE_SIZE;
 
     for (auto circle : circles){
-      auto dist = circle.dist_sq(pos);
+      double dist = circle.dist_sq(pos);
       if (dist < pow(MAX_CIRCLE_SIZE, 2)){
         max_size = sqrt(dist);
       }
     }
-
-    double radius = rand() * 1.0 / RAND_MAX * max_size - MIN_CIRCLE_SIZE;
+    std::cout << max_size << ", " << MIN_CIRCLE_SIZE << " ,";
+    double radius = rand() * 1.0 / RAND_MAX * (max_size - MIN_CIRCLE_SIZE) + MIN_CIRCLE_SIZE;
+    std::cout << radius << std::endl;
     circles.push_back({pos, radius});
 
+    Circle delete_radius = circles.back();
+    delete_radius.radius += MIN_CIRCLE_SIZE;
     for (int i=0; i<noise.size(); i++){
-      if (circles.back().dist_sq(noise[i].pos) <= pow(radius + MIN_CIRCLE_SIZE, 2)){
+      if (delete_radius.is_inside(noise[i].pos)){
         noise.erase(noise.begin() + i);
       }
     }

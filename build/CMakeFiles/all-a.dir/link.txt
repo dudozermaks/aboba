@@ -1,2 +1,0 @@
-/usr/bin/ar qc liball-a.a "CMakeFiles/all-a.dir/main.cpp.o"
-/usr/bin/ranlib liball-a.a
