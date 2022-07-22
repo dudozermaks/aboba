@@ -1,11 +1,6 @@
 CMakeFiles/all-a.dir/main.cpp.o: \
  /home/maks/shit/work/sfml/chunk_creator_rpg/main.cpp \
- /usr/include/stdc-predef.h /usr/include/SFML/Graphics.hpp \
- /usr/include/SFML/Window.hpp /usr/include/SFML/System.hpp \
- /usr/include/SFML/Config.hpp /usr/include/SFML/System/Clock.hpp \
- /usr/include/SFML/System/Export.hpp /usr/include/SFML/System/Time.hpp \
- /usr/include/SFML/System/Err.hpp /usr/include/c++/12.1.0/ostream \
- /usr/include/c++/12.1.0/ios /usr/include/c++/12.1.0/iosfwd \
+ /usr/include/stdc-predef.h /usr/include/c++/12.1.0/iostream \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -14,7 +9,8 @@ CMakeFiles/all-a.dir/main.cpp.o: \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/cpu_defines.h \
  /usr/include/c++/12.1.0/pstl/pstl_config.h \
- /usr/include/c++/12.1.0/bits/stringfwd.h \
+ /usr/include/c++/12.1.0/ostream /usr/include/c++/12.1.0/ios \
+ /usr/include/c++/12.1.0/iosfwd /usr/include/c++/12.1.0/bits/stringfwd.h \
  /usr/include/c++/12.1.0/bits/memoryfwd.h \
  /usr/include/c++/12.1.0/bits/postypes.h /usr/include/c++/12.1.0/cwchar \
  /usr/include/wchar.h /usr/include/bits/libc-header-start.h \
@@ -134,7 +130,32 @@ CMakeFiles/all-a.dir/main.cpp.o: \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/ctype_inline.h \
  /usr/include/c++/12.1.0/bits/locale_facets.tcc \
  /usr/include/c++/12.1.0/bits/basic_ios.tcc \
- /usr/include/c++/12.1.0/bits/ostream.tcc \
+ /usr/include/c++/12.1.0/bits/ostream.tcc /usr/include/c++/12.1.0/istream \
+ /usr/include/c++/12.1.0/bits/istream.tcc /usr/include/c++/12.1.0/future \
+ /usr/include/c++/12.1.0/mutex /usr/include/c++/12.1.0/tuple \
+ /usr/include/c++/12.1.0/bits/uses_allocator.h \
+ /usr/include/c++/12.1.0/bits/chrono.h /usr/include/c++/12.1.0/ratio \
+ /usr/include/c++/12.1.0/limits /usr/include/c++/12.1.0/ctime \
+ /usr/include/c++/12.1.0/bits/parse_numbers.h \
+ /usr/include/c++/12.1.0/bits/std_mutex.h \
+ /usr/include/c++/12.1.0/bits/unique_lock.h \
+ /usr/include/c++/12.1.0/condition_variable \
+ /usr/include/c++/12.1.0/bits/shared_ptr.h \
+ /usr/include/c++/12.1.0/bits/shared_ptr_base.h \
+ /usr/include/c++/12.1.0/bits/allocated_ptr.h \
+ /usr/include/c++/12.1.0/bits/unique_ptr.h \
+ /usr/include/c++/12.1.0/ext/aligned_buffer.h \
+ /usr/include/c++/12.1.0/ext/concurrence.h \
+ /usr/include/c++/12.1.0/bits/atomic_base.h \
+ /usr/include/c++/12.1.0/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/12.1.0/bits/atomic_futex.h \
+ /usr/include/c++/12.1.0/atomic \
+ /usr/include/c++/12.1.0/bits/std_function.h \
+ /usr/include/c++/12.1.0/bits/std_thread.h /usr/include/SFML/Graphics.hpp \
+ /usr/include/SFML/Window.hpp /usr/include/SFML/System.hpp \
+ /usr/include/SFML/Config.hpp /usr/include/SFML/System/Clock.hpp \
+ /usr/include/SFML/System/Export.hpp /usr/include/SFML/System/Time.hpp \
+ /usr/include/SFML/System/Err.hpp \
  /usr/include/SFML/System/FileInputStream.hpp \
  /usr/include/SFML/System/InputStream.hpp \
  /usr/include/SFML/System/NonCopyable.hpp \
@@ -152,7 +173,6 @@ CMakeFiles/all-a.dir/main.cpp.o: \
  /usr/include/c++/12.1.0/pstl/execution_defs.h \
  /usr/include/c++/12.1.0/locale \
  /usr/include/c++/12.1.0/bits/locale_facets_nonio.h \
- /usr/include/c++/12.1.0/ctime \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/time_members.h \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/12.1.0/bits/codecvt.h \
@@ -203,10 +223,8 @@ CMakeFiles/all-a.dir/main.cpp.o: \
  /usr/include/SFML/Graphics/Texture.hpp \
  /usr/include/SFML/Graphics/Image.hpp /usr/include/c++/12.1.0/map \
  /usr/include/c++/12.1.0/bits/stl_tree.h \
- /usr/include/c++/12.1.0/ext/aligned_buffer.h \
  /usr/include/c++/12.1.0/bits/node_handle.h \
- /usr/include/c++/12.1.0/bits/stl_map.h /usr/include/c++/12.1.0/tuple \
- /usr/include/c++/12.1.0/bits/uses_allocator.h \
+ /usr/include/c++/12.1.0/bits/stl_map.h \
  /usr/include/c++/12.1.0/bits/stl_multimap.h \
  /usr/include/c++/12.1.0/bits/erase_if.h \
  /usr/include/SFML/Graphics/RectangleShape.hpp \
@@ -219,35 +237,20 @@ CMakeFiles/all-a.dir/main.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastNoise/FastNoise.h \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastNoise/FastNoise_Config.h \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastSIMD/FastSIMD.h \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastSIMD/FastSIMD_Config.h \
- /usr/include/c++/12.1.0/cstddef \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastSIMD/FastSIMD_Export.h \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastNoise/FastNoise_Export.h \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastNoise/SmartNode.h \
- /usr/include/c++/12.1.0/utility \
- /usr/include/c++/12.1.0/bits/stl_relops.h \
- /usr/include/c++/12.1.0/cassert /usr/include/assert.h \
- /usr/include/c++/12.1.0/functional \
- /usr/include/c++/12.1.0/bits/std_function.h \
- /usr/include/c++/12.1.0/unordered_map \
- /usr/include/c++/12.1.0/bits/hashtable.h \
- /usr/include/c++/12.1.0/bits/hashtable_policy.h \
- /usr/include/c++/12.1.0/bits/enable_special_members.h \
- /usr/include/c++/12.1.0/bits/unordered_map.h \
+ /home/maks/shit/work/sfml/chunk_creator_rpg/PerlinNoise/PerlinNoise.hpp \
  /usr/include/c++/12.1.0/array /usr/include/c++/12.1.0/compare \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastNoise/Generators/BasicGenerators.h \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastNoise/Generators/Generator.h \
- /usr/include/c++/12.1.0/cmath /usr/include/math.h \
- /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/c++/12.1.0/numeric \
+ /usr/include/c++/12.1.0/bits/stl_numeric.h /usr/include/c++/12.1.0/bit \
+ /usr/include/c++/12.1.0/pstl/glue_numeric_defs.h \
+ /usr/include/c++/12.1.0/random /usr/include/c++/12.1.0/cmath \
+ /usr/include/math.h /usr/include/bits/math-vector.h \
+ /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
  /usr/include/bits/fp-fast.h \
  /usr/include/bits/mathcalls-helper-functions.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
  /usr/include/bits/iscanonical.h /usr/include/c++/12.1.0/bits/specfun.h \
- /usr/include/c++/12.1.0/limits /usr/include/c++/12.1.0/tr1/gamma.tcc \
+ /usr/include/c++/12.1.0/tr1/gamma.tcc \
  /usr/include/c++/12.1.0/tr1/special_function_util.h \
  /usr/include/c++/12.1.0/tr1/bessel_function.tcc \
  /usr/include/c++/12.1.0/tr1/beta_function.tcc \
@@ -259,19 +262,6 @@ CMakeFiles/all-a.dir/main.cpp.o: \
  /usr/include/c++/12.1.0/tr1/poly_hermite.tcc \
  /usr/include/c++/12.1.0/tr1/poly_laguerre.tcc \
  /usr/include/c++/12.1.0/tr1/riemann_zeta.tcc \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastNoise/Generators/Value.h \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastNoise/Generators/Perlin.h \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastNoise/Generators/Simplex.h \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastNoise/Generators/Cellular.h \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastNoise/Generators/Fractal.h \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastNoise/Generators/DomainWarp.h \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastNoise/Generators/DomainWarpFractal.h \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastNoise/Generators/Modifiers.h \
- /home/maks/shit/work/sfml/chunk_creator_rpg/FastNoise2/include/FastNoise/Generators/Blends.h \
- /usr/include/c++/12.1.0/climits \
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h
+ /usr/include/c++/12.1.0/bits/random.h \
+ /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/opt_random.h \
+ /usr/include/c++/12.1.0/bits/random.tcc
