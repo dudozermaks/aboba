@@ -1,12 +1,19 @@
 #include "iostream"
 #include <future>
+#include <ostream>
 #include <time.h>
 #include "SFML/Graphics.hpp"
 #include "PerlinNoise/PerlinNoise.hpp"
 
-const double MAX_CIRCLE_SIZE = 2;
-const double MIN_CIRCLE_SIZE = 1;
-const double DIST_BETWEEN = 0;
+const sf::VideoMode SIZE = {800, 800};
+
+const double MAX_CIRCLE_SIZE = 4;
+const double MIN_CIRCLE_SIZE = 2;
+const double DIST_BETWEEN = 0.1;
+
+const double PERLIN_SCALE = 0.1;
+const double POINT_SCALE = 10; 
+const double SPAWN_SCALE = 10;
 
 struct Noise{
   sf::Vector2f pos;
@@ -42,13 +49,12 @@ struct Circle{
 
 std::vector<Noise> generate(float x_offset, float y_offset){
   std::vector<Noise> noise;
-  float scale = 0.1;
   static siv::PerlinNoise::seed_type seed = rand();
 
   static const siv::PerlinNoise perlin{ seed };
-  for (float y=0; y<80; y++){
-    for (float x=0; x<80; x++){
-      noise.push_back({{x, y}, perlin.octave2D_01((x + x_offset) * scale, (y + y_offset) * scale, 8)});
+  for (float y=0; y<SIZE.height / POINT_SCALE; y++){
+    for (float x=0; x<SIZE.width / POINT_SCALE; x++){
+      noise.push_back({{x, y}, perlin.octave2D_01((x + x_offset) * PERLIN_SCALE, (y + y_offset) * PERLIN_SCALE, 8)});
       if (noise.back().val > 0.5) {noise.pop_back();}
     }
   }
@@ -56,15 +62,14 @@ std::vector<Noise> generate(float x_offset, float y_offset){
 }
 
 int main(){
-  sf::RenderWindow win{{800, 800}, "RPG"};
+  sf::RenderWindow win{SIZE, "RPG"};
   win.setFramerateLimit(60);
 
   srand(time(NULL));
   
-  float x_offset, y_offset;
   const float step = 100;
 
-  std::vector<Noise> noise = generate(x_offset, y_offset);
+  std::vector<Noise> noise = generate(0, 0);
 
   std::vector<Circle> circles;
   int index = 0;
@@ -75,9 +80,9 @@ int main(){
     double max_size = MAX_CIRCLE_SIZE;
 
     for (auto circle : circles){
-      double dist = circle.dist_sq(n.pos) - pow(circle.radius, 2);
-      if (dist < pow(max_size, 2)){
-        max_size = sqrt(dist);
+      double dist = sqrt(circle.dist_sq(n.pos)) - circle.radius;
+      if (dist < max_size){
+        max_size = dist;
       }
     }
     double radius = rand() * 1.0 / RAND_MAX * (max_size - MIN_CIRCLE_SIZE) + MIN_CIRCLE_SIZE;
@@ -100,7 +105,8 @@ int main(){
       win.draw(&point, 1, sf::Points);
     }
     win.display();
-    bool u_pressed = false;
+    // bool u_pressed = false;
+    bool u_pressed = true;
     while (!u_pressed){
       sf::Event e;
       while (win.pollEvent(e)){
